@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-plus-jakarta-sans);
+}
+
+:root {
+  --background: #fff8f8;
+  --foreground: #1f1a1b;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #830036 0%, #875200 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ambient-shadow {
+    box-shadow: 0 20px 40px -15px rgba(131, 0, 54, 0.08);
+  }
+
+  .btn-gradient {
+    background: linear-gradient(135deg, #830036 0%, #875200 100%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-gradient:hover {
+    box-shadow: 0 12px 24px -8px rgba(131, 0, 54, 0.4);
+    transform: translateY(-2px);
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+}
+
+/* Custom smooth scrolling and selection styling */
+html {
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+::selection {
+  background-color: #a61d4c;
+  color: #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf1f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #dfbfc3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b7074;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
