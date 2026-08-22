@@ -59,46 +59,17 @@ export default function ContactPage() {
     }
     setErrorMessage("");
     setIsSubmitting(true);
-    const serviceLabels: Record<string, string> = {
-      bookkeeping: "Bookkeeping & Reconciliation",
-      ecommerce: "E-Commerce Accounting",
-      cleanup: "Books Cleanup & Catch-Up",
-      agency: "Agency White-Label",
-      other: "Not Sure Yet",
-    };
-    const txLabels: Record<string, string> = {
-      "under-75": "Under 75",
-      "75-250": "75 – 250",
-      "250-500": "250 – 500",
-      "500+": "500+",
-    };
     try {
-      const res = await fetch(
-        "https://formsubmit.co/ajax/shree20012018@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            "Full Name": formData.fullName,
-            Email: formData.email,
-            Phone: formData.phone || "—",
-            "Business Name": formData.company || "—",
-            Service: serviceLabels[formData.service] || formData.service,
-            "Monthly Transactions":
-              txLabels[formData.monthlyTx] || formData.monthlyTx,
-            Message: formData.description || "—",
-            _subject: "New Contact Form Submission — 24MAGIC",
-            _template: "table",
-            _captcha: "false",
-          }),
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(formData),
+      });
       if (!res.ok) {
         const err = await res.json();
-        throw new Error(err.message || "Something went wrong.");
+        throw new Error(err.error || "Something went wrong.");
       }
       setIsSubmitted(true);
     } catch (err) {
