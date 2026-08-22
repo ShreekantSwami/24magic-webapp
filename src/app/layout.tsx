@@ -8,11 +8,36 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "24MAGIC | Bookkeeping & Financial Precisions",
+  metadataBase: new URL("https://24magic.in"),
+  title: {
+    default: "24MAGIC | Bookkeeping & Financial Precisions",
+    template: "%s | 24MAGIC",
+  },
   description:
     "Build the life and business of your dreams. We transform complex financial data into clear, actionable insights with minimal effort on your part.",
-  icons: {
-    icon: "/24magic-logo.jpg",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "24MAGIC",
+    title: "24MAGIC | Bookkeeping & Financial Precisions",
+    description:
+      "Build the life and business of your dreams. We transform complex financial data into clear, actionable insights with minimal effort on your part.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "24MAGIC — Bookkeeping & Financial Back-Office Support",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "24MAGIC | Bookkeeping & Financial Precisions",
+    description:
+      "Build the life and business of your dreams. We transform complex financial data into clear, actionable insights with minimal effort on your part.",
+    images: ["/og-image.jpg"],
   },
 };
 
