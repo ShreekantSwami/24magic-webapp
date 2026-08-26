@@ -53,7 +53,9 @@ export const SolutionsShowcase: React.FC = () => {
         <div className="space-y-8">
           <div className="space-y-4">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-[#a61d4c]/10 px-4 py-1.5 text-xs font-bold text-[#830036]">
-              <span className="material-symbols-outlined text-sm">auto_awesome</span>
+              <span className="material-symbols-outlined text-sm">
+                auto_awesome
+              </span>
               <span>Why 24MAGIC</span>
             </span>
 

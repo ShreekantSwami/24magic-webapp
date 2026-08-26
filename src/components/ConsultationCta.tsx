@@ -1,5 +1,5 @@
-import type React from "react";
 import { useRouter } from "next/navigation";
+import type React from "react";
 
 export const ConsultationCta: React.FC = () => {
   const router = useRouter();
