@@ -1,6 +1,6 @@
+import { useRouter } from "next/navigation";
 import type React from "react";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { PLANS_DATA } from "../data/mockData";
 import { ConsultationCta } from "./ConsultationCta";
 

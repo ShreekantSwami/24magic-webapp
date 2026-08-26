@@ -1,5 +1,5 @@
-import type React from "react";
 import { useRouter } from "next/navigation";
+import type React from "react";
 import type { ArticleItem } from "../types";
 
 interface ArticleDetailModalProps {

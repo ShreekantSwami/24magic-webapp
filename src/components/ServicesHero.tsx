@@ -1,5 +1,5 @@
-import type React from "react";
 import { useRouter } from "next/navigation";
+import type React from "react";
 
 const HERO_STATS = [
   { value: "5–7 days", label: "to get fully set up" },

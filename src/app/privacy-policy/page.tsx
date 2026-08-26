@@ -5,8 +5,16 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
 const sections = [
-  { id: "information-we-collect", label: "Information We Collect", icon: "database" },
-  { id: "how-we-use-information", label: "How We Use Your Information", icon: "settings" },
+  {
+    id: "information-we-collect",
+    label: "Information We Collect",
+    icon: "database",
+  },
+  {
+    id: "how-we-use-information",
+    label: "How We Use Your Information",
+    icon: "settings",
+  },
   { id: "information-sharing", label: "Information Sharing", icon: "share" },
   { id: "data-security", label: "Data Security", icon: "shield" },
   { id: "data-retention", label: "Data Retention", icon: "schedule" },
@@ -64,7 +72,9 @@ export default function PrivacyPolicyPage() {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-12 pt-28 sm:pt-32 pb-20 sm:pb-24">
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold text-white border border-white/20 mb-6">
-                <span className="material-symbols-outlined text-sm">policy</span>
+                <span className="material-symbols-outlined text-sm">
+                  policy
+                </span>
                 Legal
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
@@ -75,7 +85,9 @@ export default function PrivacyPolicyPage() {
                 collects, uses, and protects your information.
               </p>
               <div className="mt-6 flex items-center gap-2 text-sm text-white/50">
-                <span className="material-symbols-outlined text-base">calendar_today</span>
+                <span className="material-symbols-outlined text-base">
+                  calendar_today
+                </span>
                 Last updated: August 2026
               </div>
             </div>
@@ -98,7 +110,9 @@ export default function PrivacyPolicyPage() {
                         : "text-[#584145] border-[#dfbfc3] hover:border-[#830036] hover:text-[#830036] bg-white"
                     }`}
                   >
-                    <span className="material-symbols-outlined text-sm">{s.icon}</span>
+                    <span className="material-symbols-outlined text-sm">
+                      {s.icon}
+                    </span>
                     {s.label}
                   </button>
                 ))}
@@ -110,11 +124,12 @@ export default function PrivacyPolicyPage() {
         {/* Content */}
         <section className="py-16 sm:py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-12 space-y-12">
-
             <div id="information-we-collect" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">database</span>
+                  <span className="material-symbols-outlined text-xl">
+                    database
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Information We Collect
@@ -128,19 +143,25 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
-                    <strong className="text-[#1f1a1b]">Personal Information:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Personal Information:
+                    </strong>{" "}
                     Name, email address, phone number, business name, and any
                     additional details you provide through our contact or
                     consultation forms.
                   </li>
                   <li>
-                    <strong className="text-[#1f1a1b]">Financial & Business Information:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Financial & Business Information:
+                    </strong>{" "}
                     Bookkeeping records, bank transaction data, financial
                     documents, receipts, and related files shared with us for
                     service delivery.
                   </li>
                   <li>
-                    <strong className="text-[#1f1a1b]">Technical Information:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Technical Information:
+                    </strong>{" "}
                     Browser type, IP address, device identifiers, and pages
                     visited on our website, collected automatically through
                     standard web server logs and analytics tools.
@@ -152,7 +173,9 @@ export default function PrivacyPolicyPage() {
             <div id="how-we-use-information" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">settings</span>
+                  <span className="material-symbols-outlined text-xl">
+                    settings
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   How We Use Your Information
@@ -161,11 +184,25 @@ export default function PrivacyPolicyPage() {
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>We use the information we collect to:</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Respond to your inquiries and schedule consultation calls.</li>
-                  <li>Deliver bookkeeping, transaction reconciliation, and financial back-office services.</li>
-                  <li>Communicate with you regarding your account, service updates, or important notices.</li>
-                  <li>Improve our website performance, service quality, and overall user experience.</li>
-                  <li>Comply with applicable legal obligations and protect our legitimate business interests.</li>
+                  <li>
+                    Respond to your inquiries and schedule consultation calls.
+                  </li>
+                  <li>
+                    Deliver bookkeeping, transaction reconciliation, and
+                    financial back-office services.
+                  </li>
+                  <li>
+                    Communicate with you regarding your account, service
+                    updates, or important notices.
+                  </li>
+                  <li>
+                    Improve our website performance, service quality, and
+                    overall user experience.
+                  </li>
+                  <li>
+                    Comply with applicable legal obligations and protect our
+                    legitimate business interests.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -173,7 +210,9 @@ export default function PrivacyPolicyPage() {
             <div id="information-sharing" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">share</span>
+                  <span className="material-symbols-outlined text-xl">
+                    share
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Information Sharing
@@ -186,10 +225,22 @@ export default function PrivacyPolicyPage() {
                   only under the following circumstances:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>With your explicit consent for a specific service or request.</li>
-                  <li>With trusted service providers who assist in our operations, bound by strict confidentiality agreements.</li>
-                  <li>When required by law, regulation, subpoena, or legal process.</li>
-                  <li>To protect the rights, property, or safety of 24MAGIC, our clients, or the public.</li>
+                  <li>
+                    With your explicit consent for a specific service or
+                    request.
+                  </li>
+                  <li>
+                    With trusted service providers who assist in our operations,
+                    bound by strict confidentiality agreements.
+                  </li>
+                  <li>
+                    When required by law, regulation, subpoena, or legal
+                    process.
+                  </li>
+                  <li>
+                    To protect the rights, property, or safety of 24MAGIC, our
+                    clients, or the public.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -197,7 +248,9 @@ export default function PrivacyPolicyPage() {
             <div id="data-security" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">shield</span>
+                  <span className="material-symbols-outlined text-xl">
+                    shield
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Data Security
@@ -209,16 +262,31 @@ export default function PrivacyPolicyPage() {
                   your personal and financial information:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>AES-256 encryption and TLS 1.3 for all data transmissions.</li>
-                  <li>SOC 2 Type II compliant cloud infrastructure with role-based access controls.</li>
-                  <li>Read-only bank connections — we can never move or access your funds.</li>
-                  <li>Regular security audits, penetration testing, and access reviews.</li>
-                  <li>Confidentiality agreements for all team members with access to client data.</li>
+                  <li>
+                    AES-256 encryption and TLS 1.3 for all data transmissions.
+                  </li>
+                  <li>
+                    SOC 2 Type II compliant cloud infrastructure with role-based
+                    access controls.
+                  </li>
+                  <li>
+                    Read-only bank connections — we can never move or access
+                    your funds.
+                  </li>
+                  <li>
+                    Regular security audits, penetration testing, and access
+                    reviews.
+                  </li>
+                  <li>
+                    Confidentiality agreements for all team members with access
+                    to client data.
+                  </li>
                 </ul>
                 <p>
                   While we strive to protect your information, no method of
                   electronic transmission or storage is 100% secure. We
-                  encourage you to reach out if you have concerns about data security.
+                  encourage you to reach out if you have concerns about data
+                  security.
                 </p>
               </div>
             </div>
@@ -226,7 +294,9 @@ export default function PrivacyPolicyPage() {
             <div id="data-retention" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">schedule</span>
+                  <span className="material-symbols-outlined text-xl">
+                    schedule
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Data Retention
@@ -251,7 +321,9 @@ export default function PrivacyPolicyPage() {
             <div id="your-rights" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">person</span>
+                  <span className="material-symbols-outlined text-xl">
+                    person
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Your Rights
@@ -280,7 +352,9 @@ export default function PrivacyPolicyPage() {
             <div id="cookies" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">cookie</span>
+                  <span className="material-symbols-outlined text-xl">
+                    cookie
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Cookies & Tracking
@@ -288,13 +362,15 @@ export default function PrivacyPolicyPage() {
               </div>
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
-                  Our website uses essential cookies to ensure core functionality
-                  and improve your browsing experience. We do not use
-                  third-party advertising cookies or cross-site tracking pixels.
+                  Our website uses essential cookies to ensure core
+                  functionality and improve your browsing experience. We do not
+                  use third-party advertising cookies or cross-site tracking
+                  pixels.
                 </p>
                 <p>
                   You can manage cookie preferences through your browser
-                  settings. Disabling cookies may affect certain website features.
+                  settings. Disabling cookies may affect certain website
+                  features.
                 </p>
               </div>
             </div>
@@ -302,7 +378,9 @@ export default function PrivacyPolicyPage() {
             <div id="third-party-links" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">link</span>
+                  <span className="material-symbols-outlined text-xl">
+                    link
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Third-Party Links
@@ -321,7 +399,9 @@ export default function PrivacyPolicyPage() {
             <div id="childrens-privacy" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">child_care</span>
+                  <span className="material-symbols-outlined text-xl">
+                    child_care
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Children's Privacy
@@ -331,8 +411,9 @@ export default function PrivacyPolicyPage() {
                 <p>
                   Our services are not directed to individuals under the age of
                   18. We do not knowingly collect personal information from
-                  children. If we become aware that we have collected information
-                  from a child, we will take steps to delete it promptly.
+                  children. If we become aware that we have collected
+                  information from a child, we will take steps to delete it
+                  promptly.
                 </p>
               </div>
             </div>
@@ -340,7 +421,9 @@ export default function PrivacyPolicyPage() {
             <div id="changes-to-policy" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">update</span>
+                  <span className="material-symbols-outlined text-xl">
+                    update
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Changes to This Policy
@@ -351,7 +434,8 @@ export default function PrivacyPolicyPage() {
                   We may update this Privacy Policy from time to time to reflect
                   changes in our practices, technology, or legal requirements.
                   Any updates will be posted on this page with a revised "Last
-                  updated" date. We encourage you to review this policy periodically.
+                  updated" date. We encourage you to review this policy
+                  periodically.
                 </p>
               </div>
             </div>
@@ -359,11 +443,11 @@ export default function PrivacyPolicyPage() {
             <div id="contact-us" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">mail</span>
+                  <span className="material-symbols-outlined text-xl">
+                    mail
+                  </span>
                 </div>
-                <h2 className="text-xl font-bold text-[#1f1a1b]">
-                  Contact Us
-                </h2>
+                <h2 className="text-xl font-bold text-[#1f1a1b]">Contact Us</h2>
               </div>
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
@@ -375,7 +459,9 @@ export default function PrivacyPolicyPage() {
                     24MAGIC Financial Services
                   </p>
                   <div className="flex items-center gap-2 text-sm text-[#584145]">
-                    <span className="material-symbols-outlined text-[#830036] text-base">mail</span>
+                    <span className="material-symbols-outlined text-[#830036] text-base">
+                      mail
+                    </span>
                     <a
                       href="mailto:support@24magic.co"
                       className="text-[#830036] font-semibold hover:underline"
@@ -386,7 +472,6 @@ export default function PrivacyPolicyPage() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
       </main>

@@ -8,11 +8,23 @@ const sections = [
   { id: "acceptance", label: "Acceptance of Terms", icon: "check_circle" },
   { id: "services", label: "Services Description", icon: "description" },
   { id: "eligibility", label: "Eligibility", icon: "how_to_reg" },
-  { id: "client-responsibilities", label: "Client Responsibilities", icon: "task_alt" },
+  {
+    id: "client-responsibilities",
+    label: "Client Responsibilities",
+    icon: "task_alt",
+  },
   { id: "fees-payment", label: "Fees & Payment", icon: "payments" },
   { id: "confidentiality", label: "Confidentiality", icon: "lock" },
-  { id: "intellectual-property", label: "Intellectual Property", icon: "lightbulb" },
-  { id: "limitation-liability", label: "Limitation of Liability", icon: "gavel" },
+  {
+    id: "intellectual-property",
+    label: "Intellectual Property",
+    icon: "lightbulb",
+  },
+  {
+    id: "limitation-liability",
+    label: "Limitation of Liability",
+    icon: "gavel",
+  },
   { id: "indemnification", label: "Indemnification", icon: "verified_user" },
   { id: "termination", label: "Termination", icon: "cancel" },
   { id: "dispute-resolution", label: "Dispute Resolution", icon: "balance" },
@@ -77,7 +89,9 @@ export default function TermsOfServicePage() {
                 terms carefully before engaging our services.
               </p>
               <div className="mt-6 flex items-center gap-2 text-sm text-white/50">
-                <span className="material-symbols-outlined text-base">calendar_today</span>
+                <span className="material-symbols-outlined text-base">
+                  calendar_today
+                </span>
                 Last updated: August 2026
               </div>
             </div>
@@ -100,7 +114,9 @@ export default function TermsOfServicePage() {
                         : "text-[#584145] border-[#dfbfc3] hover:border-[#830036] hover:text-[#830036] bg-white"
                     }`}
                   >
-                    <span className="material-symbols-outlined text-sm">{s.icon}</span>
+                    <span className="material-symbols-outlined text-sm">
+                      {s.icon}
+                    </span>
                     {s.label}
                   </button>
                 ))}
@@ -112,11 +128,12 @@ export default function TermsOfServicePage() {
         {/* Content */}
         <section className="py-16 sm:py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-12 space-y-12">
-
             <div id="acceptance" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">check_circle</span>
+                  <span className="material-symbols-outlined text-xl">
+                    check_circle
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Acceptance of Terms
@@ -131,8 +148,8 @@ export default function TermsOfServicePage() {
                 </p>
                 <p>
                   These terms constitute a legally binding agreement between you
-                  (the "Client") and 24MAGIC Financial Services ("we," "us,"
-                  or "our").
+                  (the "Client") and 24MAGIC Financial Services ("we," "us," or
+                  "our").
                 </p>
               </div>
             </div>
@@ -140,7 +157,9 @@ export default function TermsOfServicePage() {
             <div id="services" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">description</span>
+                  <span className="material-symbols-outlined text-xl">
+                    description
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Services Description
@@ -150,33 +169,41 @@ export default function TermsOfServicePage() {
                 <p>24MAGIC provides the following professional services:</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
-                    <strong className="text-[#1f1a1b]">Bookkeeping & Reconciliation:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Bookkeeping & Reconciliation:
+                    </strong>{" "}
                     Transaction recording, bank and credit card reconciliation,
                     accounts payable/receivable management, and monthly
                     financial reporting.
                   </li>
                   <li>
-                    <strong className="text-[#1f1a1b]">Financial Back-Office Support:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Financial Back-Office Support:
+                    </strong>{" "}
                     Receipt and invoice management, document organization, and
                     secure cloud-based record keeping.
                   </li>
                   <li>
-                    <strong className="text-[#1f1a1b]">Tax-Ready Bookkeeping:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      Tax-Ready Bookkeeping:
+                    </strong>{" "}
                     Year-round financial organization designed to keep your
                     books audit-ready and compliant with GAAP standards.
                   </li>
                   <li>
-                    <strong className="text-[#1f1a1b]">E-Commerce & Multi-Channel Accounting:</strong>{" "}
+                    <strong className="text-[#1f1a1b]">
+                      E-Commerce & Multi-Channel Accounting:
+                    </strong>{" "}
                     Shopify, Amazon, Stripe, and PayPal reconciliation, COGS
                     tracking, and multi-state sales tax liability reporting.
                   </li>
                 </ul>
                 <p>
                   24MAGIC is not a Certified Public Accounting (CPA) firm and
-                  does not provide licensed public accounting services, including
-                  audits, attestations, examinations, reviews, or certifications
-                  requiring CPA licensure. All books are reviewed by independent
-                  CPA partners.
+                  does not provide licensed public accounting services,
+                  including audits, attestations, examinations, reviews, or
+                  certifications requiring CPA licensure. All books are reviewed
+                  by independent CPA partners.
                 </p>
               </div>
             </div>
@@ -184,7 +211,9 @@ export default function TermsOfServicePage() {
             <div id="eligibility" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">how_to_reg</span>
+                  <span className="material-symbols-outlined text-xl">
+                    how_to_reg
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Eligibility
@@ -195,8 +224,8 @@ export default function TermsOfServicePage() {
                   Our services are available to individuals, sole proprietors,
                   small businesses, and organizations operating within the
                   United States. By engaging our services, you confirm that you
-                  have the legal authority to enter into this agreement on behalf
-                  of yourself or your business.
+                  have the legal authority to enter into this agreement on
+                  behalf of yourself or your business.
                 </p>
               </div>
             </div>
@@ -204,20 +233,39 @@ export default function TermsOfServicePage() {
             <div id="client-responsibilities" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">task_alt</span>
+                  <span className="material-symbols-outlined text-xl">
+                    task_alt
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Client Responsibilities
                 </h2>
               </div>
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
-                <p>To ensure effective service delivery, the Client agrees to:</p>
+                <p>
+                  To ensure effective service delivery, the Client agrees to:
+                </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Provide accurate, complete, and timely information, documents, and records necessary for service delivery.</li>
-                  <li>Respond to requests for clarification or additional information within a reasonable timeframe.</li>
-                  <li>Maintain copies of all original documents and financial records.</li>
-                  <li>Designate a primary point of contact for communication regarding the engagement.</li>
-                  <li>Review completed work and provide feedback within the agreed-upon review period.</li>
+                  <li>
+                    Provide accurate, complete, and timely information,
+                    documents, and records necessary for service delivery.
+                  </li>
+                  <li>
+                    Respond to requests for clarification or additional
+                    information within a reasonable timeframe.
+                  </li>
+                  <li>
+                    Maintain copies of all original documents and financial
+                    records.
+                  </li>
+                  <li>
+                    Designate a primary point of contact for communication
+                    regarding the engagement.
+                  </li>
+                  <li>
+                    Review completed work and provide feedback within the
+                    agreed-upon review period.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -225,7 +273,9 @@ export default function TermsOfServicePage() {
             <div id="fees-payment" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">payments</span>
+                  <span className="material-symbols-outlined text-xl">
+                    payments
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Fees & Payment
@@ -237,10 +287,22 @@ export default function TermsOfServicePage() {
                   or proposal. Unless otherwise stated:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Invoices are issued monthly and are due within 15 days of the invoice date.</li>
-                  <li>Late payments may incur a fee of 1.5% per month on the outstanding balance.</li>
-                  <li>Services may be suspended for accounts more than 30 days past due.</li>
-                  <li>All fees are quoted in U.S. dollars (USD) and do not include applicable taxes.</li>
+                  <li>
+                    Invoices are issued monthly and are due within 15 days of
+                    the invoice date.
+                  </li>
+                  <li>
+                    Late payments may incur a fee of 1.5% per month on the
+                    outstanding balance.
+                  </li>
+                  <li>
+                    Services may be suspended for accounts more than 30 days
+                    past due.
+                  </li>
+                  <li>
+                    All fees are quoted in U.S. dollars (USD) and do not include
+                    applicable taxes.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -248,7 +310,9 @@ export default function TermsOfServicePage() {
             <div id="confidentiality" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">lock</span>
+                  <span className="material-symbols-outlined text-xl">
+                    lock
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Confidentiality
@@ -273,7 +337,9 @@ export default function TermsOfServicePage() {
             <div id="intellectual-property" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">lightbulb</span>
+                  <span className="material-symbols-outlined text-xl">
+                    lightbulb
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Intellectual Property
@@ -298,7 +364,9 @@ export default function TermsOfServicePage() {
             <div id="limitation-liability" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">gavel</span>
+                  <span className="material-symbols-outlined text-xl">
+                    gavel
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Limitation of Liability
@@ -327,7 +395,9 @@ export default function TermsOfServicePage() {
             <div id="indemnification" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">verified_user</span>
+                  <span className="material-symbols-outlined text-xl">
+                    verified_user
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Indemnification
@@ -336,13 +406,14 @@ export default function TermsOfServicePage() {
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
                   The Client agrees to indemnify and hold harmless 24MAGIC, its
-                  team members, and affiliates from any claims, losses,
-                  damages, or expenses (including reasonable attorney fees)
-                  arising from:
+                  team members, and affiliates from any claims, losses, damages,
+                  or expenses (including reasonable attorney fees) arising from:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>The Client's breach of these Service Terms.</li>
-                  <li>Inaccurate or incomplete information provided by the Client.</li>
+                  <li>
+                    Inaccurate or incomplete information provided by the Client.
+                  </li>
                   <li>Any unauthorized use of our services by the Client.</li>
                 </ul>
               </div>
@@ -351,7 +422,9 @@ export default function TermsOfServicePage() {
             <div id="termination" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">cancel</span>
+                  <span className="material-symbols-outlined text-xl">
+                    cancel
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Termination
@@ -363,14 +436,20 @@ export default function TermsOfServicePage() {
                   notice of at least fifteen (15) days. Upon termination:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>The Client will receive all completed work and outstanding documents.</li>
+                  <li>
+                    The Client will receive all completed work and outstanding
+                    documents.
+                  </li>
                   <li>All unpaid invoices become due immediately.</li>
-                  <li>Confidential information will be securely deleted or returned as requested.</li>
+                  <li>
+                    Confidential information will be securely deleted or
+                    returned as requested.
+                  </li>
                 </ul>
                 <p>
                   24MAGIC reserves the right to terminate services immediately
-                  if the Client breaches these terms, fails to make payments,
-                  or engages in conduct that is harmful to 24MAGIC or its team.
+                  if the Client breaches these terms, fails to make payments, or
+                  engages in conduct that is harmful to 24MAGIC or its team.
                 </p>
               </div>
             </div>
@@ -378,7 +457,9 @@ export default function TermsOfServicePage() {
             <div id="dispute-resolution" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">balance</span>
+                  <span className="material-symbols-outlined text-xl">
+                    balance
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Dispute Resolution
@@ -403,7 +484,9 @@ export default function TermsOfServicePage() {
             <div id="modifications" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">edit</span>
+                  <span className="material-symbols-outlined text-xl">
+                    edit
+                  </span>
                 </div>
                 <h2 className="text-xl font-bold text-[#1f1a1b]">
                   Modifications
@@ -414,7 +497,8 @@ export default function TermsOfServicePage() {
                   24MAGIC reserves the right to modify these Service Terms at
                   any time. Changes will be posted on this page with an updated
                   "Last updated" date. Continued use of our services after
-                  changes are posted constitutes acceptance of the revised terms.
+                  changes are posted constitutes acceptance of the revised
+                  terms.
                 </p>
               </div>
             </div>
@@ -422,11 +506,11 @@ export default function TermsOfServicePage() {
             <div id="contact" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">mail</span>
+                  <span className="material-symbols-outlined text-xl">
+                    mail
+                  </span>
                 </div>
-                <h2 className="text-xl font-bold text-[#1f1a1b]">
-                  Contact Us
-                </h2>
+                <h2 className="text-xl font-bold text-[#1f1a1b]">Contact Us</h2>
               </div>
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
@@ -438,7 +522,9 @@ export default function TermsOfServicePage() {
                     24MAGIC Financial Services
                   </p>
                   <div className="flex items-center gap-2 text-sm text-[#584145]">
-                    <span className="material-symbols-outlined text-[#830036] text-base">mail</span>
+                    <span className="material-symbols-outlined text-[#830036] text-base">
+                      mail
+                    </span>
                     <a
                       href="mailto:support@24magic.co"
                       className="text-[#830036] font-semibold hover:underline"
@@ -449,7 +535,6 @@ export default function TermsOfServicePage() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
       </main>

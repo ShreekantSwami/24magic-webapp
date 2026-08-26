@@ -19,9 +19,7 @@ export default function ResourcesPage() {
 
       {/* Main View Content */}
       <main className="flex-1">
-        <ResourcesView
-          onSelectArticle={(art) => setSelectedArticle(art)}
-        />
+        <ResourcesView onSelectArticle={(art) => setSelectedArticle(art)} />
       </main>
 
       {/* Footer */}
