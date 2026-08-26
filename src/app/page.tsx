@@ -12,7 +12,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const target = new Date("2026-09-01T00:00:00+05:30");
+    const target = new Date("2026-09-01T07:00:00+05:30");
     const tick = () => {
       const now = new Date();
       let diff = Math.max(
@@ -69,7 +69,7 @@ export default function Home() {
           We&apos;re launching something exciting
         </h1>
         <p className="text-base sm:text-lg text-white/70 font-medium mb-10">
-          September 1, 2026 &nbsp;&middot;&nbsp; 12:00 AM IST
+          September 1, 2026 &nbsp;&middot;&nbsp; 7:00 AM IST
         </p>
 
         {/* Countdown */}
