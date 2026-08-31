@@ -31,7 +31,7 @@ const CAPABILITIES: Capability[] = [
       "Bank and credit card reconciliations",
       "Monthly financial statements",
       "Month-end closing and review",
-      "Tax-ready financial records",
+      // "Tax-ready financial records",
     ],
     panelLabel: "Every Month, You Receive",
     panels: [
@@ -45,11 +45,11 @@ const CAPABILITIES: Capability[] = [
         text: "Receive clear, easy-to-understand financial reports that provide visibility into your business performance and support confident decision-making.",
         icon: "query_stats",
       },
-      {
-        title: "Tax-Ready Financial Records",
-        text: "Your books are organized throughout the year, making tax season smoother and ensuring your accountant has everything needed for an efficient filing process.",
-        icon: "request_quote",
-      },
+      // {
+      //   title: "Tax-Ready Financial Records",
+      //   text: "Your books are organized throughout the year, making tax season smoother and ensuring your accountant has everything needed for an efficient filing process.",
+      //   icon: "request_quote",
+      // },
       {
         title: "Reliable Financial Oversight",
         text: "We monitor your balances, review key accounts, and help ensure your financial records remain complete, consistent, and aligned with professional bookkeeping standards.",
@@ -100,7 +100,7 @@ const CAPABILITIES: Capability[] = [
     number: "03",
     icon: "groups",
     title: "Administrative Support",
-    desc: "Free up valuable time by outsourcing the day-to-day administrative tasks that keep your business running. From managing paperwork and customer invoicing to organizing records and coordinating schedules, we provide reliable back-office support tailored to your workflow.",
+    desc: "Free up valuable time by outsourcing the day-to-day administrative tasks that keep your business running. From managing paperwork and customer invoicing to organizing records and coordinating schedules, we provide reliable business support services tailored to your workflow.",
     features: [
       "Credentialing support & CME tracking",
       "Scheduling assistance & calendar management",
@@ -108,7 +108,7 @@ const CAPABILITIES: Capability[] = [
       "Business correspondence & administrative organization",
       "Data entry & digital records updates",
     ],
-    panelLabel: "Back-Office Support Services",
+    panelLabel: "Business Support Services",
     panels: [
       {
         title: "Professional Invoicing",
@@ -149,7 +149,7 @@ export const ServicesCapabilities: React.FC = () => {
           Simple Bookkeeping &amp; Administrative Solutions
         </h2>
         <p className="mt-3 text-base md:text-lg text-[#584145]">
-          Three pillars of back-office support, handled end-to-end so your
+          Three pillars of business support services, handled end-to-end so your
           business runs smoothly.
         </p>
       </div>

@@ -171,7 +171,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
   {
     id: "5",
     quote:
-      '"Switching to 24MAGIC was the best back-office decision we made. My Shopify reconciliations that used to take days now close every month in one sitting."',
+      '"Switching to 24MAGIC was the best business support decision we made. My Shopify reconciliations that used to take days now close every month in one sitting."',
     author: "Priya S.",
     role: "E-Commerce Owner",
     initials: "PS",

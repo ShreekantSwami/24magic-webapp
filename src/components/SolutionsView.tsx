@@ -32,7 +32,7 @@ export const SolutionsView: React.FC = () => {
       id: "agencies",
       title: "For Bookkeeping Agencies & Firms",
       badge: "White-Label Engine",
-      desc: "Scale your client capacity from 10 to 100 accounts without hiring more staff. Leverage 24MAGIC as your back-office reconciliation partner.",
+      desc: "Scale your client capacity from 10 to 100 accounts without hiring more staff. Leverage 24MAGIC as your business support and reconciliation partner.",
       points: [
         "White-labeled client portal & reports",
         "Standardized 5-minute review workflows",

@@ -113,7 +113,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Right: Animated Dashboard Mockup */}
         <div className="relative hidden lg:block">
-          <div className="absolute -top-6 -right-2 bg-white rounded-2xl border border-[#dfbfc3]/40 shadow-lg px-5 py-3.5 rotate-2 z-20 animate-float flex items-center gap-2.5">
+          {/* <div className="absolute -top-6 -right-2 bg-white rounded-2xl border border-[#dfbfc3]/40 shadow-lg px-5 py-3.5 rotate-2 z-20 animate-float flex items-center gap-2.5">
             <span className="material-symbols-outlined text-[#830036]">
               auto_awesome
             </span>
@@ -123,7 +123,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </p>
               <p className="text-[10px] text-[#584145]">Filed in minutes</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="relative bg-white rounded-3xl border border-[#dfbfc3]/40 shadow-xl p-7 ambient-shadow z-10">
             <div className="flex items-center justify-between mb-6">

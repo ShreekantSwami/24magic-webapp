@@ -142,14 +142,14 @@ export default function TermsOfServicePage() {
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
                   By engaging 24MAGIC for bookkeeping, transaction
-                  reconciliation, or financial back-office services, you agree
+                  reconciliation, or business support services, you agree
                   to be bound by these Service Terms. If you do not agree with
                   any part of these terms, please do not use our services.
                 </p>
                 <p>
                   These terms constitute a legally binding agreement between you
-                  (the "Client") and 24MAGIC Financial Services ("we," "us," or
-                  "our").
+                  (the "Client") and 24MAGIC Bookkeeping & Business Support
+                  ("we," "us," or "our").
                 </p>
               </div>
             </div>
@@ -178,18 +178,18 @@ export default function TermsOfServicePage() {
                   </li>
                   <li>
                     <strong className="text-[#1f1a1b]">
-                      Financial Back-Office Support:
+                      Business Support Services:
                     </strong>{" "}
                     Receipt and invoice management, document organization, and
                     secure cloud-based record keeping.
                   </li>
-                  <li>
+                  {/* <li>
                     <strong className="text-[#1f1a1b]">
                       Tax-Ready Bookkeeping:
                     </strong>{" "}
                     Year-round financial organization designed to keep your
                     books audit-ready and compliant with GAAP standards.
-                  </li>
+                  </li> */}
                   <li>
                     <strong className="text-[#1f1a1b]">
                       E-Commerce & Multi-Channel Accounting:
@@ -203,7 +203,7 @@ export default function TermsOfServicePage() {
                   does not provide licensed public accounting services,
                   including audits, attestations, examinations, reviews, or
                   certifications requiring CPA licensure. All books are reviewed
-                  by independent CPA partners.
+                  by individual CPA partners.
                 </p>
               </div>
             </div>
@@ -270,7 +270,7 @@ export default function TermsOfServicePage() {
               </div>
             </div>
 
-            <div id="fees-payment" className="scroll-mt-32">
+            {/* <div id="fees-payment" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-xl">
@@ -302,6 +302,70 @@ export default function TermsOfServicePage() {
                   <li>
                     All fees are quoted in U.S. dollars (USD) and do not include
                     applicable taxes.
+                  </li>
+                </ul>
+              </div>
+            </div> */}
+            <div id="fees-payment" className="scroll-mt-32">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-xl">
+                    payments
+                  </span>
+                </div>
+                <h2 className="text-xl font-bold text-[#1f1a1b]">
+                  Fees & Payment
+                </h2>
+              </div>
+
+              <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
+                <p>
+                  Service fees are outlined in your individual service agreement
+                  or proposal. Unless otherwise stated:
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2">
+                  {/* <li>
+                    A <strong>50% advance payment</strong> is required before
+                    the commencement of services.
+                  </li>
+
+                  <li>
+                    The remaining <strong>50% balance</strong> is due within 14
+                    days following completion of the initial 50% of the agreed
+                    scope of work.
+                  </li> */}
+                  <li>
+                    A <strong>50% advance payment</strong> is required before
+                    services commence.
+                  </li>
+
+                  <li>
+                    The remaining{" "}
+                    <strong>50% balance is due within 14 days</strong> of the
+                    service commencement date.
+                  </li>
+
+                  <li>
+                    Invoices and payment records may be managed through
+                    <strong> QuickBooks</strong> or another designated
+                    accounting platform.
+                  </li>
+
+                  <li>
+                    Services may be suspended for accounts with overdue balances
+                    until the outstanding amount is settled.
+                  </li>
+
+                  <li>
+                    Any applicable late-payment fees will be specified in the
+                    individual service agreement or proposal.
+                  </li>
+
+                  <li>
+                    Fees are quoted in the currency specified in the service
+                    agreement or proposal and do not include applicable taxes
+                    unless otherwise stated.
                   </li>
                 </ul>
               </div>
@@ -378,12 +442,12 @@ export default function TermsOfServicePage() {
                   liable for any indirect, incidental, special, consequential,
                   or punitive damages arising out of or related to our services.
                 </p>
-                <p>
+                {/* <p>
                   Our total liability for any claim arising from our services
                   shall not exceed the total fees paid by the Client for the
                   specific service giving rise to the claim during the twelve
                   (12) months preceding the claim.
-                </p>
+                </p> */}
                 <p>
                   24MAGIC is not responsible for any financial decisions made
                   based on the reports, records, or information we provide. Our
@@ -433,7 +497,7 @@ export default function TermsOfServicePage() {
               <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
                   Either party may terminate the service engagement with written
-                  notice of at least fifteen (15) days. Upon termination:
+                  notice of at least thirty (30) days. Upon termination:
                 </p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
@@ -471,13 +535,13 @@ export default function TermsOfServicePage() {
                   will first be addressed through good-faith negotiation between
                   the parties. If a resolution cannot be reached within thirty
                   (30) days, either party may pursue resolution through binding
-                  arbitration in Harris County, Texas, in accordance with the
+                  arbitration in Mumbai, India, in accordance with the
                   rules of the American Arbitration Association.
                 </p>
-                <p>
+                {/* <p>
                   These Service Terms are governed by the laws of the State of
                   Texas, without regard to its conflict of law principles.
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -519,17 +583,17 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="bg-white rounded-2xl border border-[#dfbfc3]/40 p-6 shadow-xs">
                   <p className="text-[#1f1a1b] font-bold text-base mb-2">
-                    24MAGIC Financial Services
+                    24MAGIC Bookkeeping & Business Support
                   </p>
                   <div className="flex items-center gap-2 text-sm text-[#584145]">
                     <span className="material-symbols-outlined text-[#830036] text-base">
                       mail
                     </span>
                     <a
-                      href="mailto:support@24magic.co"
+                      href="mailto:contact@24magic.in"
                       className="text-[#830036] font-semibold hover:underline"
                     >
-                      support@24magic.co
+                      contact@24magic.in
                     </a>
                   </div>
                 </div>

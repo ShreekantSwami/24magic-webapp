@@ -3,7 +3,7 @@ import type React from "react";
 const HIGHLIGHTS = [
   "95% automated transaction matching",
   "5-minute daily review dashboard",
-  "Tax-ready books year-round",
+  // "Tax-ready books year-round",
   "Dedicated CPA for every account",
 ];
 
