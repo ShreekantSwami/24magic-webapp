@@ -21,7 +21,6 @@ const sections = [
   { id: "your-rights", label: "Your Rights", icon: "person" },
   { id: "cookies", label: "Cookies & Tracking", icon: "cookie" },
   { id: "third-party-links", label: "Third-Party Links", icon: "link" },
-  { id: "childrens-privacy", label: "Children's Privacy", icon: "child_care" },
   { id: "changes-to-policy", label: "Changes to This Policy", icon: "update" },
   { id: "contact-us", label: "Contact Us", icon: "mail" },
 ];
@@ -189,7 +188,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li>
                     Deliver bookkeeping, transaction reconciliation, and
-                    financial back-office services.
+                    business support services.
                   </li>
                   <li>
                     Communicate with you regarding your account, service
@@ -256,7 +255,7 @@ export default function PrivacyPolicyPage() {
                   Data Security
                 </h2>
               </div>
-              <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
+              {/* <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
                 <p>
                   We implement industry-standard security measures to safeguard
                   your personal and financial information:
@@ -287,6 +286,38 @@ export default function PrivacyPolicyPage() {
                   electronic transmission or storage is 100% secure. We
                   encourage you to reach out if you have concerns about data
                   security.
+                </p>
+              </div> */}
+              <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
+                <p>
+                  We take reasonable measures to safeguard your personal and
+                  financial information:
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    Access to client information is limited to authorized team
+                    members.
+                  </li>
+                  <li>
+                    Client information is handled confidentially and used only
+                    for providing our services.
+                  </li>
+                  <li>
+                    Confidentiality agreements are maintained for team members
+                    who have access to client information.
+                  </li>
+                  <li>
+                    Access to client information is reviewed and managed as
+                    needed.
+                  </li>
+                </ul>
+
+                <p>
+                  While we take reasonable steps to protect your information, no
+                  method of electronic transmission or storage is completely
+                  secure. We encourage you to reach out if you have any concerns
+                  about data security.
                 </p>
               </div>
             </div>
@@ -335,10 +366,10 @@ export default function PrivacyPolicyPage() {
                   information at any time. To exercise these rights, please
                   contact us at{" "}
                   <a
-                    href="mailto:support@24magic.co"
+                    href="mailto:contact@24magic.in"
                     className="text-[#830036] font-semibold hover:underline"
                   >
-                    support@24magic.co
+                    contact@24magic.in
                   </a>
                   .
                 </p>
@@ -375,7 +406,7 @@ export default function PrivacyPolicyPage() {
               </div>
             </div>
 
-            <div id="third-party-links" className="scroll-mt-32">
+            {/* <div id="third-party-links" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-xl">
@@ -394,29 +425,7 @@ export default function PrivacyPolicyPage() {
                   the privacy policy of any third-party site you visit.
                 </p>
               </div>
-            </div>
-
-            <div id="childrens-privacy" className="scroll-mt-32">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#a61d4c]/10 text-[#830036] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-xl">
-                    child_care
-                  </span>
-                </div>
-                <h2 className="text-xl font-bold text-[#1f1a1b]">
-                  Children's Privacy
-                </h2>
-              </div>
-              <div className="ml-[52px] text-sm leading-relaxed text-[#584145] space-y-3">
-                <p>
-                  Our services are not directed to individuals under the age of
-                  18. We do not knowingly collect personal information from
-                  children. If we become aware that we have collected
-                  information from a child, we will take steps to delete it
-                  promptly.
-                </p>
-              </div>
-            </div>
+            </div> */}
 
             <div id="changes-to-policy" className="scroll-mt-32">
               <div className="flex items-center gap-3 mb-4">
@@ -456,17 +465,17 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="bg-white rounded-2xl border border-[#dfbfc3]/40 p-6 shadow-xs">
                   <p className="text-[#1f1a1b] font-bold text-base mb-2">
-                    24MAGIC Financial Services
+                    24MAGIC Bookkeeping & Business Support
                   </p>
                   <div className="flex items-center gap-2 text-sm text-[#584145]">
                     <span className="material-symbols-outlined text-[#830036] text-base">
                       mail
                     </span>
                     <a
-                      href="mailto:support@24magic.co"
+                      href="mailto:contact@24magic.in"
                       className="text-[#830036] font-semibold hover:underline"
                     >
-                      support@24magic.co
+                      contact@24magic.in
                     </a>
                   </div>
                 </div>

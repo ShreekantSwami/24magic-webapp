@@ -5,7 +5,7 @@ const HERO_STATS = [
   { value: "5–7 days", label: "to get fully set up" },
   { value: "100%", label: "read-only & secure" },
   { value: "1:1", label: "dedicated human support" },
-  { value: "365 days", label: "organized & tax-ready" },
+  { value: "365 days", label: "organized filing" },
 ];
 
 const BUNDLE_ITEMS = [
@@ -41,7 +41,8 @@ export const ServicesHero: React.FC = () => {
 
           <p className="text-base sm:text-lg text-[#584145] max-w-xl font-normal leading-relaxed">
             Simplify your operations with professional bookkeeping and dedicated
-            back-office support tailored to your business. We keep your accounts
+            business support services tailored to your business. We keep your
+            accounts
             accurate, your records organized, and your day-to-day administration
             running seamlessly.
           </p>

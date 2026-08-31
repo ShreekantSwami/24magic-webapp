@@ -15,7 +15,7 @@ const HIGHLIGHTS = [
   {
     icon: "expand",
     title: "Scale Without Hiring",
-    desc: "Go from 10 to 100+ client accounts without adding back-office staff.",
+    desc: "Go from 10 to 100+ client accounts without adding more support staff.",
   },
   {
     icon: "verified",

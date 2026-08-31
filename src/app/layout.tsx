@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "24MAGIC — Bookkeeping & Financial Back-Office Support",
+        alt: "24MAGIC — Bookkeeping & Business Support Services",
       },
     ],
   },
